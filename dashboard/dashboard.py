@@ -4,13 +4,13 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load cleaned datasets
-day_df = pd.read_csv(r'D:\uiiiiiiaaaaeee\dashboard\main_data.csv')
+day_df = pd.read_csv('\dashboard\main_data.csv')
 
 # Convert 'dteday' to datetime for filtering
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 
 # Menambahkan logo di sidebar
-logo_path = "dashboard/pngaaa.com-5084798.png"  # Ganti dengan jalur logo Anda
+logo_path = "\dashboard\pngaaa.com-5084798.png"  # Ganti dengan jalur logo Anda
 st.sidebar.image(logo_path, use_column_width=True)
 
 st.title("Dashboard Analisis Penyewaan Sepeda")
